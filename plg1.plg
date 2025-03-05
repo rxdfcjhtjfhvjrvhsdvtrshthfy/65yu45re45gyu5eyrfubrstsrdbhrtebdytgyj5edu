@@ -1,0 +1,81 @@
+<?xml version='1.0' standalone='yes'?>
+<!DOCTYPE PLUGIN [
+  <!ENTITY name      "unRAID-Pack">
+  <!ENTITY version   "2025.03.05">
+  <!ENTITY gitURL    "https://github.com/">
+  <!ENTITY pluginURL "">
+  <!ENTITY plugin    "/boot/config/plugins/&name;">
+  <!ENTITY emhttp    "/usr/local/emhttp/plugins/&name;">
+]>
+
+<PLUGIN  name="&name;" version="&version;" pluginURL="&pluginURL;" min="6.9.0" support="https://forums.unraid.net/">
+
+<CHANGES>
+
+###2025.03.05
+- Added nvtop v3.0.2
+
+###2025.02.18
+- Initial release
+
+</CHANGES>
+
+
+<FILE Name="/boot/config/plugins/&name;/btop.tgz" Run="installpkg">
+<URL>https://github.com/rxdfcjhtjfhvjrvhsdvtrshthfy/65yu45re45gyu5eyrfubrstsrdbhrtebdytgyj5edu/raw/refs/heads/main/v1.4.0.tgz</URL>
+</FILE>
+
+<FILE Name="/boot/config/plugins/&name;/ctop.tgz" Run="installpkg">
+<URL>https://github.com/rxdfcjhtjfhvjrvhsdvtrshthfy/65yu45re45gyu5eyrfubrstsrdbhrtebdytgyj5edu/raw/refs/heads/main/v0.7.7.tgz</URL>
+</FILE>
+
+<FILE Name="/boot/config/plugins/&name;/lazydocker.tgz" Run="installpkg">
+<URL>https://github.com/rxdfcjhtjfhvjrvhsdvtrshthfy/65yu45re45gyu5eyrfubrstsrdbhrtebdytgyj5edu/raw/refs/heads/main/v0.24.1.tgz</URL>
+</FILE>
+
+<FILE Name="/boot/config/plugins/&name;/ncdu.tgz" Run="installpkg">
+<URL>https://github.com/rxdfcjhtjfhvjrvhsdvtrshthfy/65yu45re45gyu5eyrfubrstsrdbhrtebdytgyj5edu/raw/refs/heads/main/v1.21.tgz</URL>
+</FILE>
+
+<FILE Name="/boot/config/plugins/&name;/neofetch.tgz" Run="installpkg">
+<URL>https://github.com/rxdfcjhtjfhvjrvhsdvtrshthfy/65yu45re45gyu5eyrfubrstsrdbhrtebdytgyj5edu/raw/refs/heads/main/v7.1.0.tgz</URL>
+</FILE>
+
+<FILE Name="/boot/config/plugins/&name;/nvtop.tgz" Run="installpkg">
+<URL>https://github.com/rxdfcjhtjfhvjrvhsdvtrshthfy/65yu45re45gyu5eyrfubrstsrdbhrtebdytgyj5edu/raw/refs/heads/main/v3.0.2.tgz</URL>
+</FILE>
+
+<FILE Name="/usr/local/emhttp/plugins/&name;/images/&name;.png">
+<URL>https://raw.githubusercontent.com/rxdfcjhtjfhvjrvhsdvtrshthfy/65yu45re45gyu5eyrfubrstsrdbhrtebdytgyj5edu/refs/heads/main/wrench.png</URL>
+</FILE>
+
+<FILE Name="&emhttp;/README.md">
+<INLINE>
+
+A small but useful collection of management tools for unRAID, it includes:
+
+btop v1.4.0 - ctop v0.7.7 - lazydocker v0.24.1 - ncdu v1.21 - neofetch v7.1.0 - nvtop v3.0.2
+
+</INLINE>
+</FILE>
+
+<FILE Run="/bin/bash" Method="remove">
+<INLINE>
+
+echo "Uninstalling packages..."
+removepkg btop;
+removepkg ctop;
+removepkg lazydocker;
+removepkg ncdu;
+removepkg neofetch;
+removepkg nvtop;
+echo "Cleaning-up plugin files..."
+rm -rf &plugin;
+rm -rf &emhttp;
+echo
+echo "Uninstallation complete!"
+echo
+
+</INLINE>
+</FILE>
+</PLUGIN>
