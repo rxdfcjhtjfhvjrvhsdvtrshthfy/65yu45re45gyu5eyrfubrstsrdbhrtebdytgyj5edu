@@ -23,7 +23,7 @@
 </FILE>
 
 <FILE Name="/boot/config/plugins/tailscale/unraid-tailscale-utils-1.12.0-noarch-1.txz">
-<URL>https://github.com/rxdfcjhtjfhvjrvhsdvtrshthfy/65yu45re45gyu5eyrfubrstsrdbhrtebdytgyj5edu/raw/refs/heads/main/v1.12.0-2.txz</URL>
+<URL>https://github.com/dkaser/unraid-tailscale-utils/releases/download/1.13.0/unraid-tailscale-utils-1.13.0-noarch-1.txz</URL>
 </FILE>
 
 <FILE Name="/boot/config/plugins/tailscale/unraid-plugin-diagnostics-1.4.0-noarch-1.txz">
