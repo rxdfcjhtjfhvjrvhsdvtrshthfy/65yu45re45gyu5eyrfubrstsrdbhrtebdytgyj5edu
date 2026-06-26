@@ -3,7 +3,6 @@
 
 <PLUGIN 
   name="tailscale"
-  author="Derek Kaser"
   version="2024.07.31"
   pluginURL="https://raw.githubusercontent.com/dkaser/unraid-tailscale/main/plugin/tailscale.plg"
   launch="Settings/Tailscale"
