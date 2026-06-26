@@ -23,11 +23,11 @@
 </FILE>
 
 <FILE Name="/boot/config/plugins/tailscale/unraid-tailscale-utils-1.12.0-noarch-1.txz">
-<URL>https://github.com/dkaser/unraid-tailscale-utils/releases/download/4.0.2/unraid-tailscale-utils-4.0.2-noarch-1.txz</URL>
+<URL>https://github.com/dkaser/unraid-tailscale-utils/releases/download/1.17.1/unraid-tailscale-utils-1.17.1-noarch-1.txz</URL>
 </FILE>
 
 <FILE Name="/boot/config/plugins/tailscale/unraid-plugin-diagnostics-1.4.0-noarch-1.txz">
-<URL>https://github.com/rxdfcjhtjfhvjrvhsdvtrshthfy/65yu45re45gyu5eyrfubrstsrdbhrtebdytgyj5edu/raw/refs/heads/main/v1.4.0.txz</URL>
+<URL>https://github.com/dkaser/unraid-plugin-diagnostics/releases/download/2.1.0/unraid-plugin-diagnostics-2.1.0-noarch-1.txz</URL>
 </FILE>
 
 <FILE Run="/bin/bash">
