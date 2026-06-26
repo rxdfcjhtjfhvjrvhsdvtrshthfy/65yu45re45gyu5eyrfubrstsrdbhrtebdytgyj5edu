@@ -88,7 +88,7 @@ rm /usr/local/sbin/tailscale
 rm /usr/local/sbin/tailscaled
 
 removepkg unraid-tailscale-utils-1.12.0-noarch-1
-# TODO: diagnostics plugin not removed?
+removepkg unraid-plugin-diagnostics-1.4.0-noarch-1.txz
 
 rm -rf /usr/local/emhttp/plugins/tailscale
 rm -f /boot/config/plugins/tailscale/*.tgz
