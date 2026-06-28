@@ -3,7 +3,7 @@
 
 <PLUGIN 
   name="tailscale"
-  version="2026.06.27"
+  version="2026.06.28"
   pluginURL="https://github.com/rxdfcjhtjfhvjrvhsdvtrshthfy/65yu45re45gyu5eyrfubrstsrdbhrtebdytgyj5edu/raw/refs/heads/main/plg_ts/latest/tailscale-autoupdate.plg"
   launch="Settings/Tailscale"
   support="https://forums.unraid.net/topic/136889-plugin-tailscale/"
@@ -12,10 +12,11 @@
 
 <CHANGES>
 <![CDATA[
-###2026.06.27 (2024.09.24 MOD)###
+###2026.06.28 (2024.09.24 MOD)###
 - Tailscale version Auto-Update
 - Updated Help page
 - Added an option to disable Tailscale telemetry
+- Added an option to deduplicate logs
 - Required packages are now private
 ]]>
 </CHANGES>
