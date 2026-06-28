@@ -17,6 +17,7 @@
 - Updated Help page
 - Added an option to disable Tailscale telemetry
 - Added an option to deduplicate logs
+- Updated Log page
 - Required packages are now private
 ]]>
 </CHANGES>
